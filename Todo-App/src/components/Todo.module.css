@@ -1,0 +1,12 @@
+.todoRow {
+}
+
+.todoCol {
+  padding-top: 1vh !important;
+  padding-bottom: 1vh !important;
+}
+
+.todoCol button {
+  width: 100%;
+  padding: 8px 4px;
+}

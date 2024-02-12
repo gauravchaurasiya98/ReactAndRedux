@@ -1,0 +1,12 @@
+.main-container {
+  min-height: 475px;
+}
+
+.hashtag-fs {
+  font-size: small;
+}
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+}
