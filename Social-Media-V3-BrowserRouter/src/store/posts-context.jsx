@@ -33,7 +33,9 @@ const postsReducer = (currPosts, action) => {
       });
       break;
     case ADD_DEFAULT_POSTS:
-      newPosts = action.payload.posts;
+      newPosts = action.payload.posts.map((post) => {
+        return { ...post, reactions: post.reactions.likes };
+      });
       break;
     default:
       newPosts = currPosts;

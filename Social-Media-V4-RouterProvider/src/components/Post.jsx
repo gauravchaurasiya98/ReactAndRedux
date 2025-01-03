@@ -42,7 +42,7 @@ const Post = ({ post }) => {
           onClick={() => likePost(post.id)}
         >
           {post.reactions !== 0 && (
-            <span className="align-middle">{post.reactions} </span>
+            <span className="align-middle">{post.reactions.likes} </span>
           )}
           <FcLike size={16} />
         </button>

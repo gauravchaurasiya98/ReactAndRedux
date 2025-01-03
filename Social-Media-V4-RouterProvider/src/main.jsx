@@ -15,7 +15,7 @@ import Posts, { fetchPosts } from "./components/Posts.jsx";
 //   createRoutesFromElements(
 //     <Route path="/" element={<App />}>
 //       <Route index element={<Posts />} loader={fetchPosts} />
-//       <Route path="create-post" element={<CreatePost />} />
+//       <Route path="create-post" element={<CreatePost />} action={addPost} />
 //     </Route>
 //   )
 // );
