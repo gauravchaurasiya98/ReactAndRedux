@@ -7,7 +7,9 @@ const postsSlice = createSlice({
   initialState: [],
   reducers: {
     initDefaultPosts: (state, action) => {
-      return action.payload;
+      return action.payload.map((post) => {
+        return { ...post, reactions: post.reactions.likes };
+      });
     },
     addPost: (state, action) => {
       let post = action.payload;
